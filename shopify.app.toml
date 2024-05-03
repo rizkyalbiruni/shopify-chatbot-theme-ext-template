@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "rubyshirt-chatbot"
+client_id = "6dead932b6ef451c2c79d622643daf5b"
+application_url = "https://rubyshirt-chatbot--development.gadget.app/api/shopify/install-or-render"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://rubyshirt-chatbot--development.gadget.app/api/connections/auth/shopify/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "quickstart-f6353c2e.myshopify.com"
